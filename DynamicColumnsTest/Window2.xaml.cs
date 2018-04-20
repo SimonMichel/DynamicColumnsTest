@@ -43,17 +43,17 @@ namespace DynamicColumnsTest
         {
             GridView view = new GridView();
 
-            foreach (var item in viewmodel2.Froups)
+            foreach (var item in viewmodel2.User.Groups)
             {
                 GridViewColumn column = new GridViewColumn()
                 {
-                    Header = item.Group.Name,
+                    Header = item.Name,
                     Width = 100,                    
                 };
                 CheckBox cb = new CheckBox();
                 cb.SetBinding(CheckBox.IsCheckedProperty, new Binding("Allowed") { Source = item });
 
-                column.CellTemplate = new DataTemplate(cb);
+                column.CellTemplate = new DataTemplate(typeof(CheckBox));
 
                 view.Columns.Add(column);
             }
