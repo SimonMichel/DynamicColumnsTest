@@ -42,6 +42,12 @@ namespace DynamicColumnsTest
                 }
             }
         }
+
+        public int Number
+        {
+            get { return Froups.Where(x => x.Allowed).Count(); }
+        }
+
     }
 
 

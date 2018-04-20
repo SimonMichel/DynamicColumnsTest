@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DynamicColumnsTest"
         mc:Ignorable="d"
-        Title="Window2" Height="300" Width="300">
+        Title="Window2" Height="300" Width="400">
     <Grid>
-        <ListView Name="listview"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Name="number"/>
+        <ListView Grid.Row="1" Name="listview"/>
     </Grid>
 </Window>
