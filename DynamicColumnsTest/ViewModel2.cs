@@ -38,6 +38,7 @@ namespace DynamicColumnsTest
                 foreach (Group group in User.Groups)
                 {
                     Froup f = new Froup(User, friend, group);
+                    froups.Add(f);
                 }
             }
         }
