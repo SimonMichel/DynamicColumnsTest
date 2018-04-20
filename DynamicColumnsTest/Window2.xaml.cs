@@ -20,13 +20,15 @@ namespace DynamicColumnsTest
     /// </summary>
     public partial class Window2 : Window
     {
-        ViewModel2 viewmodel2 = new ViewModel2();
+        ViewModel2 viewmodel2;
         public Window2()
         {
             InitializeComponent();
 
+            viewmodel2 = new ViewModel2();
+
             //Not sure about this
-            this.listview.SetBinding(ListView.ItemsSourceProperty, new Binding("Froups") { Source = viewmodel2.User });
+            this.listview.SetBinding(ListView.ItemsSourceProperty, new Binding("Friends") { Source = viewmodel2.User });
 
             viewmodel2.PropertyChanged += new PropertyChangedEventHandler(viewmodel_PropertyChanged);
 
@@ -43,21 +45,40 @@ namespace DynamicColumnsTest
         {
             GridView view = new GridView();
 
-            foreach (var item in viewmodel2.Froups)
+            GridViewColumn column0 = new GridViewColumn()
             {
-                GridViewColumn column = new GridViewColumn()
+                Header = "Friend Name",
+                Width = 100,
+                DisplayMemberBinding = new Binding("Name")
+            };
+
+            view.Columns.Add(column0);
+
+            foreach (var item in viewmodel2.User.Groups)
+            {
+              
+                DataTemplate template = new DataTemplate { DataType = typeof(CheckBox) };
+                
+                FrameworkElementFactory stackPanelFactory = new FrameworkElementFactory(typeof(StackPanel));
+                stackPanelFactory.SetValue(StackPanel.OrientationProperty, Orientation.Vertical);
+
+                FrameworkElementFactory checkbox = new FrameworkElementFactory(typeof(CheckBox));
+                checkbox.SetBinding(CheckBox.IsCheckedProperty, new Binding("Allowed") { Source = item });
+                stackPanelFactory.AppendChild(checkbox);
+
+                template.VisualTree = stackPanelFactory;
+
+
+                view.Columns.Add(new GridViewColumn
                 {
-                    Header = item.Group.Name,
-                    Width = 100,                    
-                };
-                CheckBox cb = new CheckBox();
-                cb.SetBinding(CheckBox.IsCheckedProperty, new Binding("Allowed") { Source = item });
 
-                column.CellTemplate = new DataTemplate(cb);
-
-                view.Columns.Add(column);
+                    Header = item.Name,
+                    CellTemplate = template,
+                    Width = 100
+                }
+                );
+               
             }
-
             return view;
         }
     }

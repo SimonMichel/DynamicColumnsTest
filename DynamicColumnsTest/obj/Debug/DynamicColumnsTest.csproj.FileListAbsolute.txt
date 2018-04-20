@@ -16,3 +16,62 @@ c:\users\simon\documents\visual studio 2017\Projects\DynamicColumnsTest\DynamicC
 c:\users\simon\documents\visual studio 2017\Projects\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.pdb
 c:\users\simon\documents\visual studio 2017\Projects\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\Window2.g.cs
 c:\users\simon\documents\visual studio 2017\Projects\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\Window2.baml
+<<<<<<< HEAD
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\bin\Debug\DynamicColumnsTest.exe.config
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\bin\Debug\DynamicColumnsTest.exe
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\bin\Debug\DynamicColumnsTest.pdb
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.csprojResolveAssemblyReference.cache
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\MainWindow.g.cs
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\Window1.g.cs
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\Window2.g.cs
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\App.g.cs
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest_MarkupCompile.cache
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest_MarkupCompile.lref
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\MainWindow.baml
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\Window1.baml
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\Window2.baml
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.g.resources
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.Properties.Resources.resources
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.csproj.GenerateResource.cache
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.csproj.CoreCompileInputs.cache
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.exe
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.pdb
+=======
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\bin\Debug\DynamicColumnsTest.exe.config
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\bin\Debug\DynamicColumnsTest.exe
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\bin\Debug\DynamicColumnsTest.pdb
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\MainWindow.g.cs
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\Window1.g.cs
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\Window2.g.cs
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\App.g.cs
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest_MarkupCompile.cache
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest_MarkupCompile.lref
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\MainWindow.baml
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\Window1.baml
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\Window2.baml
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.g.resources
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.Properties.Resources.resources
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.csproj.GenerateResource.Cache
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.exe
+C:\Users\Simon\Documents\GitHub\DynamicColumns\DynamicColumnsTest\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.pdb
+>>>>>>> 9039fbd726f8eddd51acbd69a3df4b69d57f2f84
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\bin\Debug\DynamicColumnsTest.exe.config
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\bin\Debug\DynamicColumnsTest.exe
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\bin\Debug\DynamicColumnsTest.pdb
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.csprojResolveAssemblyReference.cache
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\MainWindow.g.cs
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\Window1.g.cs
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\Window2.g.cs
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\App.g.cs
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\DynamicColumnsTest_MarkupCompile.cache
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\DynamicColumnsTest_MarkupCompile.lref
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\MainWindow.baml
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\Window1.baml
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\Window2.baml
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.g.resources
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.Properties.Resources.resources
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.csproj.GenerateResource.cache
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.csproj.CoreCompileInputs.cache
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.exe
+C:\Users\felix\Documents\GitHub\DynamicColumnsTest-Dev\DynamicColumnsTest\obj\Debug\DynamicColumnsTest.pdb
