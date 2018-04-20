@@ -33,7 +33,7 @@ namespace DynamicColumnsTest
 
             Froups = new List<Froup>();
 
-            foreach (Friend friend in User.Firends)
+            foreach (Friend friend in User.Friends)
             {
                 foreach (Group group in User.Groups)
                 {
@@ -58,7 +58,7 @@ namespace DynamicColumnsTest
     public class User : Person
     {
         private List<Friend> friends;
-        public List<Friend> Firends
+        public List<Friend> Friends
         {
             get { return friends; }
             set { friends = value; }

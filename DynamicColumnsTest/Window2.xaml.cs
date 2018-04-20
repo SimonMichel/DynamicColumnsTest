@@ -20,13 +20,15 @@ namespace DynamicColumnsTest
     /// </summary>
     public partial class Window2 : Window
     {
-        ViewModel2 viewmodel2 = new ViewModel2();
+        ViewModel2 viewmodel2;
         public Window2()
         {
             InitializeComponent();
 
+            viewmodel2 = new ViewModel2();
+
             //Not sure about this
-            this.listview.SetBinding(ListView.ItemsSourceProperty, new Binding("Froups") { Source = viewmodel2.User });
+            this.listview.SetBinding(ListView.ItemsSourceProperty, new Binding("Friends") { Source = viewmodel2.User });
 
             viewmodel2.PropertyChanged += new PropertyChangedEventHandler(viewmodel_PropertyChanged);
 
@@ -48,7 +50,7 @@ namespace DynamicColumnsTest
                 GridViewColumn column = new GridViewColumn()
                 {
                     Header = item.Name,
-                    Width = 100,                    
+                    Width = 100               
                 };
                 CheckBox cb = new CheckBox();
                 cb.SetBinding(CheckBox.IsCheckedProperty, new Binding("Allowed") { Source = item });
