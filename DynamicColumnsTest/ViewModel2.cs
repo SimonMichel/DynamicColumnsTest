@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,20 @@ namespace DynamicColumnsTest
             set { froups = value; OnPropertyChanged(nameof(Froups)); }
         }
 
+        private DataTable table;
+        public DataTable Table
+        {
+            get { return table; }
+            set
+            {
+                if (table != value)
+                {
+                    table = value;
+                    OnPropertyChanged("Table");
+                }
+            }
+        }
+
         public ViewModel2()
         {
             this.User = new User("Simon");
@@ -37,17 +52,11 @@ namespace DynamicColumnsTest
             {
                 foreach (Group group in User.Groups)
                 {
-                    Froup f = new Froup(User, friend, group);
+                    Froup f = new Froup(User, friend, group, false);
                     froups.Add(f);
                 }
             }
         }
-
-        public int Number
-        {
-            get { return Froups.Where(x => x.Allowed).Count(); }
-        }
-
     }
 
 
@@ -79,8 +88,8 @@ namespace DynamicColumnsTest
 
         public User(string name) : base(name)
         {
-            friends = new List<Friend>() { new Friend("Pierre"), new Friend("Paul"), new Friend("Jean") };
-            groups = new List<Group>() { new Group("Travail"), new Group("Foot"), new Group("Poney") };
+            friends = new List<Friend>() { new Friend("Pierre"), new Friend("Paul"), new Friend("Jean"), new Friend("Jacques") };
+            groups = new List<Group>() { new Group("Travail"), new Group("Foot"), new Group("Poney"), new Group("Secret"), new Group("Piscine") };
         }
     }
 
@@ -114,12 +123,12 @@ namespace DynamicColumnsTest
         public Group Group { get; set; }
         public bool Allowed { get; set; }
 
-        public Froup(User u, Friend f, Group g)
+        public Froup(User u, Friend f, Group g, bool b)
         {
             User = u;
             Friend = f;
             Group = g;
-            Allowed = false;
+            Allowed = b;
         }
     }
 }
