@@ -28,21 +28,16 @@ namespace DynamicColumnsTest
 
             viewmodel2 = new ViewModel2();
 
-            //Not sure about this
             this.datagrid.SetBinding(DataGrid.ItemsSourceProperty, new Binding("Table") { Source = viewmodel2 });
 
             viewmodel2.PropertyChanged += new PropertyChangedEventHandler(viewmodel_PropertyChanged);
-
-            //DataTable table = GenerateTable();
-            //this.listview.View = view;
 
             GenerateTable();
         }
 
         void viewmodel_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            //DataTable table = GenerateTable();
-            //this.listview.View = view;
+            //Je ne sais pas quoi mettre ici (ni même si c'est utile)
         }
         private void GenerateTable()
         {
@@ -72,26 +67,14 @@ namespace DynamicColumnsTest
             viewmodel2.Table = dt;
         }
 
+        //Ne plus avoir ça dans agenda (ICommand dans le viewmodel est plus propre)
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Save();
         }
-
         private void Save()
         {
-            IEnumerable<Group> groups = viewmodel2.Froups.Select(x => x.Group).Distinct();
-
-            foreach (DataRow row in viewmodel2.Table.Rows)
-            {
-                foreach (var group in groups)
-                {
-                    //Mettre dans un try
-                    bool newValue = (bool)row[group.Name];
-                    viewmodel2.Froups.Where(x => x.Friend.Name == (string)row[0] && x.Group == group).FirstOrDefault().Allowed = newValue ;
-                }
-            }
-
-            //Apporter les modifications à la db.
+            viewmodel2.SaveHandler?.Invoke(this, EventArgs.Empty);
         }
     }
 }

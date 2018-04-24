@@ -11,9 +11,8 @@
             <RowDefinition Height="30"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <!--Changer Click en Command dans Agenda-->
         <Button Content="Save" Click="Button_Click"/>
         <DataGrid Grid.Row="1" x:Name="datagrid"/>
-
-
     </Grid>
 </Window>

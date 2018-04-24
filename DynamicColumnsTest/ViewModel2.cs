@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace DynamicColumnsTest
 {
@@ -56,6 +57,30 @@ namespace DynamicColumnsTest
                     froups.Add(f);
                 }
             }
+        }
+
+        //Changer ça en ICommand dans Agenda
+        private EventHandler saveHandler;
+        public EventHandler SaveHandler
+        {
+            get => saveHandler ?? (saveHandler += (s, e) => Save());
+        }
+
+        private void Save()
+        {
+            IEnumerable<Group> groups = Froups.Select(x => x.Group).Distinct();
+
+            foreach (DataRow row in Table.Rows)
+            {
+                foreach (var group in groups)
+                {
+                    //Mettre dans un try
+                    bool newValue = (bool)row[group.Name];
+                    Froups.Where(x => x.Friend.Name == (string)row[0] && x.Group == group).FirstOrDefault().Allowed = newValue;
+                }
+            }
+
+            //Apporter les modifications à la db.
         }
     }
 
